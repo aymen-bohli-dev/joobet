@@ -1,0 +1,39 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           JobeetJob
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              JobeetJob
+    plural:                JobeetJobs
+    route_prefix:          jobeet_job
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      list:
+        title:   Job Management
+        layout:  stacked
+        display: [active ,category, company,email ,position ,location ]
+        params:  |
+          %%is_activated%% <small>%%jobeet_category%%</small> - %%company%%
+           (<em>%%email%%</em>) is looking for a %%=position%% (%%location%%)
+        max_per_page: 5
+        batch_actions:
+          _delete:    ~
+          extend:     ~
+        object_actions:
+          extend:     ~
+          _edit:      ~
+          _delete:    ~
+        actions:
+          deleteNeverActivated: { label: Delete never activated jobs }
+        peer_method:  doSelectJoinJobeetCategory
+      filter:
+        display: [category_id, company, position, description, is_activated, is_public, email, expires_at]
+      form:
+        class: BackendJobeetJobForm
+      edit:    ~
+      new:     ~
