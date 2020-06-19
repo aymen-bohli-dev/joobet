@@ -29,11 +29,9 @@ class JobeetCategory extends BaseJobeetCategory
 
     public function getCompany()
     {
-
     }
     public function getPosition()
     {
-
     }
 
     /**
@@ -75,4 +73,9 @@ class JobeetCategory extends BaseJobeetCategory
         return JobeetJobPeer::addActiveJobsCriteria($criteria);
     }
 
+    public function getLatestPost()
+    {
+        return $this->getActiveJobs(1)->getFirst();
+    }
+    
 } // JobeetCategory

@@ -2,7 +2,9 @@
 
 include(dirname(__FILE__).'/../../bootstrap/functional.php');
 
-$browser = new sfTestFunctional(new sfBrowser());
+///$browser = new sfTestFunctional(new sfBrowser());
+$browser = new JobeetTestFunctional(new sfBrowser());
+
 
 $browser->
   get('/job/index')->
@@ -17,3 +19,5 @@ $browser->
     checkElement('body', '!/This is a temporary page/')->
   end()
 ;
+
+

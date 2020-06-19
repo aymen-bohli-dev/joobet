@@ -16,18 +16,19 @@
  *
  * @package    lib.model
  */
-class JobeetJob extends BaseJobeetJob {
+class JobeetJob extends BaseJobeetJob
+{
 
-	/**
-	 * Initializes internal state of JobeetJob object.
-	 * @see        parent::__construct()
-	 */
-	public function __construct()
-	{
-		// Make sure that parent constructor is always invoked, since that
-		// is where any default values for this object are set.
-		parent::__construct();
-	}
+    /**
+     * Initializes internal state of JobeetJob object.
+     * @see        parent::__construct()
+     */
+    public function __construct()
+    {
+        // Make sure that parent constructor is always invoked, since that
+        // is where any default values for this object are set.
+        parent::__construct();
+    }
 
     public function __toString()
     {
@@ -36,17 +37,75 @@ class JobeetJob extends BaseJobeetJob {
 
     public function save(PropelPDO $con = null)
     {
-        if ($this->isNew() && !$this->getExpiresAt())
-        {
+        if ($this->isNew() && !$this->getExpiresAt()) {
             $now = $this->getCreatedAt() ? $this->getCreatedAt('U') : time();
             $this->setExpiresAt($now + 86400 * sfConfig::get('app_active_days'));
         }
-        if (!$this->getToken())
-        {
-            $this->setToken(sha1($this->getEmail().rand(11111, 99999)));
+
+        if (!$this->getToken()) {
+            $this->setToken(sha1($this->getEmail() . rand(11111, 99999)));
         }
-        return parent::save($con);
+
+
+        if (is_null($con)) {
+            $con = Propel::getConnection(JobeetJobPeer::DATABASE_NAME, Propel::CONNECTION_WRITE);
+        }
+
+        $con->beginTransaction();
+        try {
+            $ret = parent::save($con);
+            $this->updateLuceneIndex();
+            $con->commit();
+            return $ret;
+        } catch (Exception $e) {
+            $con->rollBack();
+            throw $e;
+        }
+        return $ret;
     }
+
+    public function delete(PropelPDO $con = null)
+    {
+        $index = JobeetJobPeer::getLuceneIndex();
+
+        foreach ($index->find('pk:' . $this->getId()) as $hit) {
+            $index->delete($hit->id);
+        }
+
+        return parent::delete($con);
+    }
+
+    public function updateLuceneIndex()
+    {
+        $index = JobeetJobPeer::getLuceneIndex();
+
+        // remove existing entries
+        foreach ($index->find('pk:' . $this->getId()) as $hit) {
+            $index->delete($hit->id);
+        }
+
+        // don't index expired and non-activated jobs
+        if ($this->isExpired() || !$this->getIsActivated()) {
+            return;
+        }
+
+        $doc = new Zend_Search_Lucene_Document();
+
+        // store job primary key to identify it in the search results
+        $doc->addField(Zend_Search_Lucene_Field::Keyword('pk', $this->getId()));
+
+        // index job fields
+        $doc->addField(Zend_Search_Lucene_Field::UnStored('position', $this->getPosition(), 'utf-8'));
+        $doc->addField(Zend_Search_Lucene_Field::UnStored('company', $this->getCompany(), 'utf-8'));
+        $doc->addField(Zend_Search_Lucene_Field::UnStored('location', $this->getLocation(), 'utf-8'));
+        $doc->addField(Zend_Search_Lucene_Field::UnStored('description', $this->getDescription(), 'utf-8'));
+
+        // add job to the index
+        $index->addDocument($doc);
+        $index->commit();
+    }
+
+
 
     public function getCompanySlug()
     {
@@ -91,8 +150,7 @@ class JobeetJob extends BaseJobeetJob {
 
     public function extend($force = false)
     {
-        if (!$force && !$this->expiresSoon())
-        {
+        if (!$force && !$this->expiresSoon()) {
             return false;
         }
 
@@ -103,4 +161,19 @@ class JobeetJob extends BaseJobeetJob {
     }
 
 
+    public function asArray($host)
+    {
+        return array(
+            'category'     => $this->getJobeetCategory()->getName(),
+            'type'         => $this->getType(),
+            'company'      => $this->getCompany(),
+            'logo'         => $this->getLogo() ? 'http://' . $host . '/uploads/jobs/' . $this->getLogo() : null,
+            'url'          => $this->getUrl(),
+            'position'     => $this->getPosition(),
+            'location'     => $this->getLocation(),
+            'description'  => $this->getDescription(),
+            'how_to_apply' => $this->getHowToApply(),
+            'expires_at'   => $this->getCreatedAt('c'),
+        );
+    }
 } // JobeetJob

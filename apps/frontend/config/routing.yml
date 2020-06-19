@@ -3,11 +3,13 @@
 
 # default rules
 category:
-  url:      /category/:slug
-  class:    sfPropelRoute
-  param:    { module: category, action: show }
-  options:  { model: JobeetCategory, type: object }
-
+  url: /category/:slug.:sf_format
+  class: sfPropelRoute
+  param: { module: category, action: show, sf_format: html }
+  options: { model: JobeetCategory, type: object }
+  requirements:
+  sf_format: (?:html|atom)
+  
 job_show_user:
   url:     /job/:company_slug/:location_slug/:id/:position_slug
   class:   sfPropelRoute
@@ -60,6 +62,9 @@ job_delete:
   param:   { module: job, action: delete, sf_format: html }
   requirements: { sf_method: delete }
 
+
+
+  
 homepage:
   url:   /
   param: { module: default, action: index }
@@ -73,4 +78,23 @@ homepage:
 #default:
 #  url:   /:module/:action/*
 
-
+api_jobs:
+  url:     /api/:token/jobs.:sf_format
+  class:   sfPropelRoute
+  param:   { module: api, action: list }
+  options: { model: JobeetJob, type: list, method: getForToken }
+  requirements:
+    sf_format: (?:xml|json|yaml)
+    
+affiliate:
+  class:   sfPropelRouteCollection
+  options:
+    model: JobeetAffiliate
+    actions: [new, create]
+    object_actions: { wait: get }
+   
+job_search:
+  url:   /search.:sf_format
+  param: { module: job, action: search, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)

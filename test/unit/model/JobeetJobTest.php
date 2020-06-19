@@ -30,7 +30,7 @@ function create_job($defaults = array())
     $job->fromArray(array_merge(array(
         'category_id'  => $category->getId(),
         'company'      => 'Sensio Labs10002',
-        'position'     => 'Senior Tester',
+        'position'     => 'Senior Tester555',
         'location'     => 'Paris, France',
         'description'  => 'Testing is fun',
         'how_to_apply' => 'Send e-Mail',
@@ -41,3 +41,6 @@ function create_job($defaults = array())
 
     return $job;
 }
+
+
+
