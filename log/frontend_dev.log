@@ -17571,3 +17571,992 @@ Jun 19 15:41:39 symfony [info] {sfWebDebugLogger} Action "job/index" 32.56 ms (1
 Jun 19 15:41:39 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 73.73 ms (1)
 Jun 19 15:41:39 symfony [info] {sfWebDebugLogger} Partial "job/_list" 34.91 ms (3)
 Jun 19 15:41:39 symfony [info] {sfWebResponse} Send content (65231 o)
+Jun 19 16:19:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 19 16:19:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 19 16:19:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 19 16:19:26 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Jun 19 16:19:26 symfony [info] {myUser} Automatic user logout due to timeout
+Jun 19 16:19:26 symfony [info] {myUser} User is not authenticated
+Jun 19 16:19:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 19 16:19:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 19 16:19:26 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jun 19 16:19:26 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 19 16:19:26 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2020-06-19 16:19:26' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jun 19 16:19:26 symfony [info] {sfPHPView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jun 19 16:19:26 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    8.5 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=25 AND jobeet_job.EXPIRES_AT>'2020-06-19 16:19:26' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Jun 19 16:19:26 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 19 16:19:26 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=25 AND jobeet_job.EXPIRES_AT>'2020-06-19 16:19:26' AND jobeet_job.IS_ACTIVATED=1
+Jun 19 16:19:26 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=26 AND jobeet_job.EXPIRES_AT>'2020-06-19 16:19:26' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Jun 19 16:19:26 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 19 16:19:26 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=26 AND jobeet_job.EXPIRES_AT>'2020-06-19 16:19:26' AND jobeet_job.IS_ACTIVATED=1
+Jun 19 16:19:26 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=27 AND jobeet_job.EXPIRES_AT>'2020-06-19 16:19:26' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Jun 19 16:19:26 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 19 16:19:26 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=27 AND jobeet_job.EXPIRES_AT>'2020-06-19 16:19:26' AND jobeet_job.IS_ACTIVATED=1
+Jun 19 16:19:26 symfony [info] {sfPHPView} Decorate content with "F:\wamp\www\jobeet\apps\frontend\templates/layout.php"
+Jun 19 16:19:26 symfony [info] {sfPHPView} Render "F:\wamp\www\jobeet\apps\frontend\templates/layout.php"
+Jun 19 16:19:26 symfony [info] {main} Get slot "title"
+Jun 19 16:19:26 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN (131,132,533)
+Jun 19 16:19:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 19 16:19:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 19 16:19:26 symfony [info] {sfWebDebugLogger} Configuration 11.96 ms (9)
+Jun 19 16:19:26 symfony [info] {sfWebDebugLogger} Factories 35.94 ms (1)
+Jun 19 16:19:26 symfony [info] {sfWebDebugLogger} Action "job/index" 18.64 ms (1)
+Jun 19 16:19:26 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 63.95 ms (1)
+Jun 19 16:19:26 symfony [info] {sfWebDebugLogger} Partial "job/_list" 30.97 ms (3)
+Jun 19 16:19:27 symfony [info] {sfWebResponse} Send content (65864 o)
+Jun 19 16:19:28 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 19 16:19:28 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 19 16:19:28 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 19 16:19:28 symfony [info] {sfPatternRouting} Match route "job_show_user" (/job/:company_slug/:location_slug/:id/:position_slug) for /job/company-127/paris-france-127/131/manager-127 with parameters array (  'module' => 'job',  'action' => 'show',  'sf_format' => 'html',  'company_slug' => 'company-127',  'location_slug' => 'paris-france-127',  'id' => '131',  'position_slug' => 'manager-127',)
+Jun 19 16:19:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 19 16:19:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 19 16:19:28 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Jun 19 16:19:28 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 19 16:19:28 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.3 MB | mempeak:    7.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID='131'
+Jun 19 16:19:28 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID='131' AND jobeet_job.EXPIRES_AT>'2020-06-19 16:19:28' LIMIT 1
+Jun 19 16:19:28 symfony [info] {sfPHPView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Jun 19 16:19:28 symfony [info] {main} Set slot "title"
+Jun 19 16:19:28 symfony [info] {sfPHPView} Decorate content with "F:\wamp\www\jobeet\apps\frontend\templates/layout.php"
+Jun 19 16:19:28 symfony [info] {sfPHPView} Render "F:\wamp\www\jobeet\apps\frontend\templates/layout.php"
+Jun 19 16:19:28 symfony [info] {main} Get slot "title"
+Jun 19 16:19:28 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.5 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN (131,132,533)
+Jun 19 16:19:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 19 16:19:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 19 16:19:28 symfony [info] {sfWebDebugLogger} Configuration 8.70 ms (9)
+Jun 19 16:19:28 symfony [info] {sfWebDebugLogger} Factories 30.21 ms (1)
+Jun 19 16:19:28 symfony [info] {sfWebDebugLogger} Action "job/show" 28.84 ms (1)
+Jun 19 16:19:28 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 16.72 ms (1)
+Jun 19 16:19:28 symfony [info] {sfWebResponse} Send content (42487 o)
+Jun 19 16:19:31 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 19 16:19:31 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 19 16:19:31 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 19 16:19:31 symfony [info] {sfPatternRouting} Match route "affiliate_new" (/affiliate/new.:sf_format) for /affiliate/new with parameters array (  'module' => 'affiliate',  'action' => 'new',  'sf_format' => 'html',)
+Jun 19 16:19:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 19 16:19:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 19 16:19:31 symfony [info] {affiliateActions} Call "affiliateActions->executeNew()"
+Jun 19 16:19:31 symfony [info] {sfPHPView} Render "F:\wamp\www\jobeet\apps\frontend\modules/affiliate/templates/newSuccess.php"
+Jun 19 16:19:31 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/affiliate/templates/_form.php"
+Jun 19 16:19:31 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   11.0 MB | mempeak:   11.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 19 16:19:31 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   11.0 MB | mempeak:   11.0 MB | memdelta:      0.0 B | SELECT jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`
+Jun 19 16:19:31 symfony [info] {sfPHPView} Decorate content with "F:\wamp\www\jobeet\apps\frontend\templates/layout.php"
+Jun 19 16:19:31 symfony [info] {sfPHPView} Render "F:\wamp\www\jobeet\apps\frontend\templates/layout.php"
+Jun 19 16:19:31 symfony [info] {main} Get slot "title"
+Jun 19 16:19:31 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN (131,132,533)
+Jun 19 16:19:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 19 16:19:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 19 16:19:31 symfony [info] {sfWebDebugLogger} Configuration 61.33 ms (10)
+Jun 19 16:19:31 symfony [info] {sfWebDebugLogger} Factories 28.74 ms (1)
+Jun 19 16:19:31 symfony [info] {sfWebDebugLogger} Action "affiliate/new" 71.08 ms (1)
+Jun 19 16:19:31 symfony [info] {sfWebDebugLogger} View "Success" for "affiliate/new" 66.44 ms (1)
+Jun 19 16:19:31 symfony [info] {sfWebDebugLogger} Partial "affiliate/_form" 0.45 ms (1)
+Jun 19 16:19:31 symfony [info] {sfWebResponse} Send content (44597 o)
+Jun 19 16:19:36 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 19 16:19:36 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 19 16:19:36 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 19 16:19:36 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job.atom with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'atom',)
+Jun 19 16:19:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 19 16:19:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 19 16:19:36 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jun 19 16:19:36 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 19 16:19:36 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2020-06-19 16:19:36' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jun 19 16:19:36 symfony [info] {sfPHPView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/indexSuccess.atom.php"
+Jun 19 16:19:36 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    8.5 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2020-06-19 16:19:36' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 1
+Jun 19 16:19:36 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.0 MB | mempeak:    9.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=25 AND jobeet_job.EXPIRES_AT>'2020-06-19 16:19:36' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Jun 19 16:19:36 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.atom.php"
+Jun 19 16:19:36 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=26 AND jobeet_job.EXPIRES_AT>'2020-06-19 16:19:36' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Jun 19 16:19:36 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.atom.php"
+Jun 19 16:19:36 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=27 AND jobeet_job.EXPIRES_AT>'2020-06-19 16:19:36' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Jun 19 16:19:36 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.atom.php"
+Jun 19 16:19:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 19 16:19:36 symfony [info] {sfWebResponse} Send header "Content-Type: application/atom+xml; charset=utf-8"
+Jun 19 16:19:36 symfony [info] {sfWebDebugLogger} Configuration 14.50 ms (9)
+Jun 19 16:19:36 symfony [info] {sfWebDebugLogger} Factories 31.47 ms (1)
+Jun 19 16:19:36 symfony [info] {sfWebDebugLogger} Action "job/index" 35.27 ms (1)
+Jun 19 16:19:36 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 59.50 ms (1)
+Jun 19 16:19:36 symfony [info] {sfWebDebugLogger} Partial "job/_list" 33.11 ms (3)
+Jun 19 16:19:36 symfony [info] {sfWebResponse} Send content (21658 o)
+Jun 19 16:19:38 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 19 16:19:38 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 19 16:19:38 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 19 16:19:38 symfony [info] {sfPatternRouting} Match route "affiliate_new" (/affiliate/new.:sf_format) for /affiliate/new with parameters array (  'module' => 'affiliate',  'action' => 'new',  'sf_format' => 'html',)
+Jun 19 16:19:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 19 16:19:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 19 16:19:38 symfony [info] {affiliateActions} Call "affiliateActions->executeNew()"
+Jun 19 16:19:38 symfony [info] {sfPHPView} Render "F:\wamp\www\jobeet\apps\frontend\modules/affiliate/templates/newSuccess.php"
+Jun 19 16:19:38 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/affiliate/templates/_form.php"
+Jun 19 16:19:38 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   10.0 MB | mempeak:   10.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 19 16:19:38 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   10.3 MB | mempeak:   10.3 MB | memdelta:      0.0 B | SELECT jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`
+Jun 19 16:19:38 symfony [info] {sfPHPView} Decorate content with "F:\wamp\www\jobeet\apps\frontend\templates/layout.php"
+Jun 19 16:19:38 symfony [info] {sfPHPView} Render "F:\wamp\www\jobeet\apps\frontend\templates/layout.php"
+Jun 19 16:19:38 symfony [info] {main} Get slot "title"
+Jun 19 16:19:38 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   10.5 MB | mempeak:   10.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN (131,132,533)
+Jun 19 16:19:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 19 16:19:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 19 16:19:38 symfony [info] {sfWebDebugLogger} Configuration 13.92 ms (9)
+Jun 19 16:19:38 symfony [info] {sfWebDebugLogger} Factories 32.53 ms (1)
+Jun 19 16:19:38 symfony [info] {sfWebDebugLogger} Action "affiliate/new" 22.73 ms (1)
+Jun 19 16:19:38 symfony [info] {sfWebDebugLogger} View "Success" for "affiliate/new" 57.87 ms (1)
+Jun 19 16:19:38 symfony [info] {sfWebDebugLogger} Partial "affiliate/_form" 0.55 ms (1)
+Jun 19 16:19:38 symfony [info] {sfWebResponse} Send content (44557 o)
+Jun 19 16:19:40 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 19 16:19:40 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 19 16:19:40 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 19 16:19:40 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job.atom with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'atom',)
+Jun 19 16:19:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 19 16:19:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 19 16:19:41 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jun 19 16:19:41 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 19 16:19:41 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2020-06-19 16:19:41' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jun 19 16:19:41 symfony [info] {sfPHPView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/indexSuccess.atom.php"
+Jun 19 16:19:41 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    8.5 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2020-06-19 16:19:41' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 1
+Jun 19 16:19:41 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.0 MB | mempeak:    9.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=25 AND jobeet_job.EXPIRES_AT>'2020-06-19 16:19:41' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Jun 19 16:19:41 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.atom.php"
+Jun 19 16:19:41 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=26 AND jobeet_job.EXPIRES_AT>'2020-06-19 16:19:41' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Jun 19 16:19:41 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.atom.php"
+Jun 19 16:19:41 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=27 AND jobeet_job.EXPIRES_AT>'2020-06-19 16:19:41' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Jun 19 16:19:41 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.atom.php"
+Jun 19 16:19:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 19 16:19:41 symfony [info] {sfWebResponse} Send header "Content-Type: application/atom+xml; charset=utf-8"
+Jun 19 16:19:41 symfony [info] {sfWebDebugLogger} Configuration 13.88 ms (9)
+Jun 19 16:19:41 symfony [info] {sfWebDebugLogger} Factories 31.58 ms (1)
+Jun 19 16:19:41 symfony [info] {sfWebDebugLogger} Action "job/index" 28.26 ms (1)
+Jun 19 16:19:41 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 55.21 ms (1)
+Jun 19 16:19:41 symfony [info] {sfWebDebugLogger} Partial "job/_list" 32.65 ms (3)
+Jun 19 16:19:41 symfony [info] {sfWebResponse} Send content (21658 o)
+Jun 19 16:19:44 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 19 16:19:44 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 19 16:19:44 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 19 16:19:44 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job.json with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'json',)
+Jun 19 16:19:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 19 16:19:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 19 16:19:44 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jun 19 16:19:44 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 19 16:19:44 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2020-06-19 16:19:44' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jun 19 16:19:44 symfony [err] {sfRenderException} The template "indexSuccess.json.php" does not exist or is unreadable in "".
+Jun 19 16:19:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 19 16:19:44 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jun 19 16:19:44 symfony [info] {sfWebDebugLogger} Configuration 13.97 ms (9)
+Jun 19 16:19:44 symfony [info] {sfWebDebugLogger} Factories 32.31 ms (1)
+Jun 19 16:19:44 symfony [info] {sfWebDebugLogger} Action "job/index" 26.43 ms (1)
+Jun 19 16:19:44 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 41.53 ms (1)
+Jun 19 16:19:55 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 19 16:19:55 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 19 16:19:55 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 19 16:19:55 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/symfony/job.json" (/).
+Jun 19 16:19:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 19 16:19:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 19 16:19:55 symfony [info] {sfWebDebugLogger} Configuration 6.31 ms (5)
+Jun 19 16:19:55 symfony [info] {sfWebDebugLogger} Factories 28.53 ms (1)
+Jun 19 16:20:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 19 16:20:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 19 16:20:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 19 16:20:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/sensio_labs/job.json" (/).
+Jun 19 16:20:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 19 16:20:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 19 16:20:06 symfony [info] {sfWebDebugLogger} Configuration 7.27 ms (5)
+Jun 19 16:20:06 symfony [info] {sfWebDebugLogger} Factories 31.80 ms (1)
+Jun 19 16:20:18 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 19 16:20:18 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 19 16:20:18 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 19 16:20:18 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/sensio_labs/job" (/).
+Jun 19 16:20:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 19 16:20:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 19 16:20:18 symfony [info] {sfWebDebugLogger} Configuration 5.30 ms (5)
+Jun 19 16:20:18 symfony [info] {sfWebDebugLogger} Factories 25.35 ms (1)
+Jun 22 10:53:28 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:53:28 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:53:28 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:53:28 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Jun 22 10:53:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:53:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:53:29 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jun 22 10:53:30 symfony [debug] {sfPropelLogger} time:  0.006 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:53:30 symfony [debug] {sfPropelLogger} time:  0.031 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2020-06-22 10:53:30' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jun 22 10:53:31 symfony [info] {sfPHPView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jun 22 10:53:31 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:    8.5 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=25 AND jobeet_job.EXPIRES_AT>'2020-06-22 10:53:31' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Jun 22 10:53:31 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:53:31 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=25 AND jobeet_job.EXPIRES_AT>'2020-06-22 10:53:31' AND jobeet_job.IS_ACTIVATED=1
+Jun 22 10:53:31 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=26 AND jobeet_job.EXPIRES_AT>'2020-06-22 10:53:31' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Jun 22 10:53:31 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:53:31 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=26 AND jobeet_job.EXPIRES_AT>'2020-06-22 10:53:31' AND jobeet_job.IS_ACTIVATED=1
+Jun 22 10:53:31 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=27 AND jobeet_job.EXPIRES_AT>'2020-06-22 10:53:31' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Jun 22 10:53:31 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:53:31 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=27 AND jobeet_job.EXPIRES_AT>'2020-06-22 10:53:31' AND jobeet_job.IS_ACTIVATED=1
+Jun 22 10:53:31 symfony [info] {sfPHPView} Decorate content with "F:\wamp\www\jobeet\apps\frontend\templates/layout.php"
+Jun 22 10:53:31 symfony [info] {sfPHPView} Render "F:\wamp\www\jobeet\apps\frontend\templates/layout.php"
+Jun 22 10:53:31 symfony [info] {main} Get slot "title"
+Jun 22 10:53:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:53:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:53:31 symfony [info] {sfWebDebugLogger} Configuration 40.38 ms (9)
+Jun 22 10:53:31 symfony [info] {sfWebDebugLogger} Factories 1436.73 ms (1)
+Jun 22 10:53:31 symfony [info] {sfWebDebugLogger} Action "job/index" 917.88 ms (1)
+Jun 22 10:53:31 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 937.48 ms (1)
+Jun 22 10:53:31 symfony [info] {sfWebDebugLogger} Partial "job/_list" 149.71 ms (3)
+Jun 22 10:53:32 symfony [info] {sfWebResponse} Send content (61567 o)
+Jun 22 10:53:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:53:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:53:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:53:35 symfony [info] {sfPatternRouting} Match route "job_show_user" (/job/:company_slug/:location_slug/:id/:position_slug) for /job/company-78/paris-france/82/web-developer with parameters array (  'module' => 'job',  'action' => 'show',  'sf_format' => 'html',  'company_slug' => 'company-78',  'location_slug' => 'paris-france',  'id' => '82',  'position_slug' => 'web-developer',)
+Jun 22 10:53:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:53:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:53:35 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Jun 22 10:53:35 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:53:35 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.3 MB | mempeak:    7.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID='82'
+Jun 22 10:53:35 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID='82' AND jobeet_job.EXPIRES_AT>'2020-06-22 10:53:35' LIMIT 1
+Jun 22 10:53:35 symfony [info] {sfPHPView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Jun 22 10:53:35 symfony [info] {main} Set slot "title"
+Jun 22 10:53:35 symfony [info] {sfPHPView} Decorate content with "F:\wamp\www\jobeet\apps\frontend\templates/layout.php"
+Jun 22 10:53:35 symfony [info] {sfPHPView} Render "F:\wamp\www\jobeet\apps\frontend\templates/layout.php"
+Jun 22 10:53:35 symfony [info] {main} Get slot "title"
+Jun 22 10:53:35 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    8.5 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN (82)
+Jun 22 10:53:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:53:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:53:35 symfony [info] {sfWebDebugLogger} Configuration 32.40 ms (9)
+Jun 22 10:53:35 symfony [info] {sfWebDebugLogger} Factories 89.64 ms (1)
+Jun 22 10:53:35 symfony [info] {sfWebDebugLogger} Action "job/show" 90.04 ms (1)
+Jun 22 10:53:35 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 136.47 ms (1)
+Jun 22 10:53:35 symfony [info] {sfWebResponse} Send content (41143 o)
+Jun 22 10:53:37 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:53:37 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:53:37 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:53:37 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Jun 22 10:53:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:53:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:53:37 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jun 22 10:53:37 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:53:37 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2020-06-22 10:53:37' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jun 22 10:53:37 symfony [info] {sfPHPView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jun 22 10:53:37 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    8.5 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=25 AND jobeet_job.EXPIRES_AT>'2020-06-22 10:53:37' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Jun 22 10:53:37 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:53:37 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=25 AND jobeet_job.EXPIRES_AT>'2020-06-22 10:53:37' AND jobeet_job.IS_ACTIVATED=1
+Jun 22 10:53:37 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=26 AND jobeet_job.EXPIRES_AT>'2020-06-22 10:53:37' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Jun 22 10:53:37 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:53:37 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=26 AND jobeet_job.EXPIRES_AT>'2020-06-22 10:53:37' AND jobeet_job.IS_ACTIVATED=1
+Jun 22 10:53:37 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=27 AND jobeet_job.EXPIRES_AT>'2020-06-22 10:53:37' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Jun 22 10:53:37 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:53:37 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=27 AND jobeet_job.EXPIRES_AT>'2020-06-22 10:53:37' AND jobeet_job.IS_ACTIVATED=1
+Jun 22 10:53:37 symfony [info] {sfPHPView} Decorate content with "F:\wamp\www\jobeet\apps\frontend\templates/layout.php"
+Jun 22 10:53:37 symfony [info] {sfPHPView} Render "F:\wamp\www\jobeet\apps\frontend\templates/layout.php"
+Jun 22 10:53:37 symfony [info] {main} Get slot "title"
+Jun 22 10:53:37 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN (82)
+Jun 22 10:53:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:53:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:53:37 symfony [info] {sfWebDebugLogger} Configuration 38.62 ms (9)
+Jun 22 10:53:37 symfony [info] {sfWebDebugLogger} Factories 88.89 ms (1)
+Jun 22 10:53:37 symfony [info] {sfWebDebugLogger} Action "job/index" 78.54 ms (1)
+Jun 22 10:53:37 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 211.69 ms (1)
+Jun 22 10:53:37 symfony [info] {sfWebDebugLogger} Partial "job/_list" 97.23 ms (3)
+Jun 22 10:53:37 symfony [info] {sfWebResponse} Send content (63899 o)
+Jun 22 10:55:05 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:05 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:05 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:05 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:05 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:05 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:05 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:05 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:05 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:06 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:06 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:06 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:07 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:07 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:07 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:07 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:09 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.8 MB | mempeak:   11.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:09 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:   12.3 MB | mempeak:   12.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('1','2','77','76','75','78','79','81','80','74','73','72','86','85','84','87','88','91','90','89','83','82','96','95','94','97','98','101','100','99','93','92','67','66','65','68','69','71','70','64','63','62','57','56','58','59','61','60','55','54','52','53','18','19','20','21','17','16','12','13','14','15','28','27','29','30','31','26','25','22','23','24','38','37','39','40','41','36','35','32','33','34','47','46','48','49','51','50','45','44','43','42','8','9','10','11','7','6','4','5','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:09' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:09 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:09 symfony [info] {sfWebDebugLogger} Configuration 39.85 ms (8)
+Jun 22 10:55:09 symfony [info] {sfWebDebugLogger} Factories 95.28 ms (1)
+Jun 22 10:55:09 symfony [info] {sfWebDebugLogger} Action "job/search" 3792.72 ms (1)
+Jun 22 10:55:09 symfony [info] {sfWebDebugLogger} Partial "job/_list" 66.44 ms (1)
+Jun 22 10:55:09 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:09 symfony [info] {sfWebResponse} Send content (7516 o)
+Jun 22 10:55:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:09 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:09 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:10 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   11.8 MB | mempeak:   11.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:10 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:   12.3 MB | mempeak:   12.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('2','77','76','75','78','79','81','80','74','73','72','86','85','84','87','88','91','90','89','83','82','96','95','94','97','98','101','100','99','93','92','67','66','65','68','69','71','70','64','63','62','57','56','58','59','61','60','55','54','52','53','18','19','20','21','17','16','12','13','14','15','28','27','29','30','31','26','25','22','23','24','38','37','39','40','41','36','35','32','33','34','47','46','48','49','51','50','45','44','43','42','8','9','10','11','7','6','4','5','1','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:10' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:10 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:11 symfony [info] {sfWebDebugLogger} Configuration 32.17 ms (8)
+Jun 22 10:55:11 symfony [info] {sfWebDebugLogger} Factories 3857.82 ms (1)
+Jun 22 10:55:11 symfony [info] {sfWebDebugLogger} Action "job/search" 1338.33 ms (1)
+Jun 22 10:55:11 symfony [info] {sfWebDebugLogger} Partial "job/_list" 69.62 ms (1)
+Jun 22 10:55:11 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:11 symfony [info] {sfWebResponse} Send content (7516 o)
+Jun 22 10:55:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:11 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:11 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:12 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.8 MB | mempeak:   11.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:12 symfony [debug] {sfPropelLogger} time:  0.004 sec | slow:  NO | mem:   12.3 MB | mempeak:   12.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('77','76','75','78','79','81','80','74','73','72','86','85','84','87','88','91','90','89','83','82','96','95','94','97','98','101','100','99','93','92','67','66','65','68','69','71','70','64','63','62','57','56','58','59','61','60','55','54','52','53','18','19','20','21','17','16','12','13','14','15','28','27','29','30','31','26','25','22','23','24','38','37','39','40','41','36','35','32','33','34','47','46','48','49','51','50','45','44','43','42','8','9','10','11','7','6','2','4','5','1','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:12' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:12 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:12 symfony [info] {sfWebDebugLogger} Configuration 29.84 ms (8)
+Jun 22 10:55:12 symfony [info] {sfWebDebugLogger} Factories 4947.04 ms (1)
+Jun 22 10:55:12 symfony [info] {sfWebDebugLogger} Action "job/search" 1238.17 ms (1)
+Jun 22 10:55:12 symfony [info] {sfWebDebugLogger} Partial "job/_list" 95.31 ms (1)
+Jun 22 10:55:12 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:12 symfony [info] {sfWebResponse} Send content (7516 o)
+Jun 22 10:55:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:12 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:12 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:13 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.8 MB | mempeak:   11.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:13 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:   12.3 MB | mempeak:   12.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('2','77','76','75','78','79','81','80','74','73','72','86','85','84','87','88','91','90','89','83','82','96','95','94','97','98','101','100','99','93','92','67','66','65','68','69','71','70','64','63','62','57','56','58','59','61','60','55','54','52','53','18','19','20','21','17','16','12','13','14','15','28','27','29','30','31','26','25','22','23','24','38','37','39','40','41','36','35','32','33','34','47','46','48','49','51','50','45','44','43','42','8','9','10','11','7','6','4','5','1','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:13' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:13 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:13 symfony [info] {sfWebDebugLogger} Configuration 29.51 ms (8)
+Jun 22 10:55:13 symfony [info] {sfWebDebugLogger} Factories 5854.20 ms (1)
+Jun 22 10:55:13 symfony [info] {sfWebDebugLogger} Action "job/search" 1336.16 ms (1)
+Jun 22 10:55:13 symfony [info] {sfWebDebugLogger} Partial "job/_list" 82.89 ms (1)
+Jun 22 10:55:13 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:13 symfony [info] {sfWebResponse} Send content (7516 o)
+Jun 22 10:55:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:13 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:13 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:14 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.3 MB | mempeak:   11.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:14 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE 1<>1 AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:14' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:14 symfony [info] {sfWebDebugLogger} Configuration 30.80 ms (8)
+Jun 22 10:55:14 symfony [info] {sfWebDebugLogger} Factories 7144.14 ms (1)
+Jun 22 10:55:14 symfony [info] {sfWebDebugLogger} Action "job/search" 839.23 ms (1)
+Jun 22 10:55:14 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:14 symfony [info] {sfWebResponse} Send content (11 o)
+Jun 22 10:55:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:14 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:14 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:14 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:14 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:14 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:15 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.8 MB | mempeak:   11.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:15 symfony [debug] {sfPropelLogger} time:  0.004 sec | slow:  NO | mem:   12.3 MB | mempeak:   12.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('2','77','76','75','78','79','81','80','74','73','72','86','85','84','87','88','91','90','89','83','82','96','95','94','97','98','101','100','99','93','92','67','66','65','68','69','71','70','64','63','62','57','56','58','59','61','60','55','54','52','53','18','19','20','21','17','16','12','13','14','15','28','27','29','30','31','26','25','22','23','24','38','37','39','40','41','36','35','32','33','34','47','46','48','49','51','50','45','44','43','42','8','9','10','11','7','6','4','5','1','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:15' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:16 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:16 symfony [info] {sfWebDebugLogger} Configuration 32.22 ms (8)
+Jun 22 10:55:16 symfony [info] {sfWebDebugLogger} Factories 7602.38 ms (1)
+Jun 22 10:55:16 symfony [info] {sfWebDebugLogger} Action "job/search" 1316.34 ms (1)
+Jun 22 10:55:16 symfony [info] {sfWebDebugLogger} Partial "job/_list" 88.16 ms (1)
+Jun 22 10:55:16 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:16 symfony [info] {sfWebResponse} Send content (7516 o)
+Jun 22 10:55:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:16 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:16 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:16 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:16 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:16 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:17 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.8 MB | mempeak:   11.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:17 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:   12.3 MB | mempeak:   12.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('77','76','75','78','79','81','80','74','73','72','86','85','84','87','88','91','90','89','83','82','96','95','94','97','98','101','100','99','93','92','67','66','65','68','69','71','70','64','63','62','57','56','58','59','61','60','55','54','52','53','18','19','20','21','17','16','12','13','14','15','28','27','29','30','31','26','25','22','23','24','38','37','39','40','41','36','35','32','33','34','47','46','48','49','51','50','45','44','43','42','8','9','10','11','7','6','2','4','5','1','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:17' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:17 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:17 symfony [info] {sfWebDebugLogger} Configuration 28.65 ms (8)
+Jun 22 10:55:17 symfony [info] {sfWebDebugLogger} Factories 6387.88 ms (1)
+Jun 22 10:55:17 symfony [info] {sfWebDebugLogger} Action "job/search" 1180.50 ms (1)
+Jun 22 10:55:17 symfony [info] {sfWebDebugLogger} Partial "job/_list" 78.10 ms (1)
+Jun 22 10:55:17 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:17 symfony [info] {sfWebResponse} Send content (7516 o)
+Jun 22 10:55:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:17 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:17 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:17 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:17 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:17 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:18 symfony [err] {Zend_Search_Lucene_Exception} At least 3 non-wildcard characters are required at the beginning of pattern.
+Jun 22 10:55:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 22 10:55:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:18 symfony [info] {sfWebDebugLogger} Configuration 28.31 ms (8)
+Jun 22 10:55:18 symfony [info] {sfWebDebugLogger} Factories 6223.72 ms (1)
+Jun 22 10:55:18 symfony [info] {sfWebDebugLogger} Action "job/search" 773.14 ms (1)
+Jun 22 10:55:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:18 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:18 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:18 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:18 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:18 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:19 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.8 MB | mempeak:   11.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:19 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:   12.3 MB | mempeak:   12.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('77','76','75','78','79','81','80','74','73','72','86','85','84','87','88','91','90','89','83','82','96','95','94','97','98','101','100','99','93','92','67','66','65','68','69','71','70','64','63','62','57','56','58','59','61','60','55','54','52','53','18','19','20','21','17','16','12','13','14','15','28','27','29','30','31','26','25','22','23','24','38','37','39','40','41','36','35','32','33','34','47','46','48','49','51','50','45','44','43','42','8','9','10','11','7','6','2','4','5','1','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:19' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:19 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:19 symfony [info] {sfWebDebugLogger} Configuration 31.95 ms (8)
+Jun 22 10:55:19 symfony [info] {sfWebDebugLogger} Factories 5763.63 ms (1)
+Jun 22 10:55:19 symfony [info] {sfWebDebugLogger} Action "job/search" 1232.90 ms (1)
+Jun 22 10:55:19 symfony [info] {sfWebDebugLogger} Partial "job/_list" 82.40 ms (1)
+Jun 22 10:55:19 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:19 symfony [info] {sfWebResponse} Send content (7516 o)
+Jun 22 10:55:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:19 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:19 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:19 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:19 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:19 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:20 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.8 MB | mempeak:   11.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:20 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:   12.3 MB | mempeak:   12.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('77','76','75','78','79','81','80','74','73','72','86','85','84','87','88','91','90','89','83','82','96','95','94','97','98','101','100','99','93','92','67','66','65','68','69','71','70','64','63','62','57','56','58','59','61','60','55','54','52','53','18','19','20','21','17','16','12','13','14','15','28','27','29','30','31','26','25','22','23','24','38','37','39','40','41','36','35','32','33','34','47','46','48','49','51','50','45','44','43','42','8','9','10','11','7','6','2','4','5','1','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:20' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:20 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:20 symfony [info] {sfWebDebugLogger} Configuration 30.18 ms (8)
+Jun 22 10:55:20 symfony [info] {sfWebDebugLogger} Factories 5672.49 ms (1)
+Jun 22 10:55:20 symfony [info] {sfWebDebugLogger} Action "job/search" 1230.29 ms (1)
+Jun 22 10:55:20 symfony [info] {sfWebDebugLogger} Partial "job/_list" 69.17 ms (1)
+Jun 22 10:55:20 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:20 symfony [info] {sfWebResponse} Send content (7516 o)
+Jun 22 10:55:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:20 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:21 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:21 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:21 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:21 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:21 symfony [err] {Zend_Search_Lucene_Exception} At least 3 non-wildcard characters are required at the beginning of pattern.
+Jun 22 10:55:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 22 10:55:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:21 symfony [info] {sfWebDebugLogger} Configuration 31.48 ms (8)
+Jun 22 10:55:21 symfony [info] {sfWebDebugLogger} Factories 6054.05 ms (1)
+Jun 22 10:55:21 symfony [info] {sfWebDebugLogger} Action "job/search" 690.62 ms (1)
+Jun 22 10:55:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:21 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:21 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:21 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:21 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:21 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:22 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.8 MB | mempeak:   11.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:22 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:   12.3 MB | mempeak:   12.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('77','76','75','78','79','81','80','74','73','72','86','85','84','87','88','91','90','89','83','82','96','95','94','97','98','101','100','99','93','92','67','66','65','68','69','71','70','64','63','62','57','56','58','59','61','60','55','54','52','53','18','19','20','21','17','16','12','13','14','15','28','27','29','30','31','26','25','22','23','24','38','37','39','40','41','36','35','32','33','34','47','46','48','49','51','50','45','44','43','42','8','9','10','11','7','6','2','4','5','1','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:22' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:22 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:22 symfony [info] {sfWebDebugLogger} Configuration 26.62 ms (8)
+Jun 22 10:55:22 symfony [info] {sfWebDebugLogger} Factories 5441.68 ms (1)
+Jun 22 10:55:22 symfony [info] {sfWebDebugLogger} Action "job/search" 1221.66 ms (1)
+Jun 22 10:55:22 symfony [info] {sfWebDebugLogger} Partial "job/_list" 81.80 ms (1)
+Jun 22 10:55:22 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:22 symfony [info] {sfWebResponse} Send content (7516 o)
+Jun 22 10:55:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:22 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:23 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:23 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:23 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:23 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:24 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.8 MB | mempeak:   11.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:24 symfony [debug] {sfPropelLogger} time:  0.004 sec | slow:  NO | mem:   12.3 MB | mempeak:   12.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('77','76','75','78','79','81','80','74','73','72','86','85','84','87','88','91','90','89','83','82','96','95','94','97','98','101','100','99','93','92','67','66','65','68','69','71','70','64','63','62','57','56','58','59','61','60','55','54','52','53','18','19','20','21','17','16','12','13','14','15','28','27','29','30','31','26','25','22','23','24','38','37','39','40','41','36','35','32','33','34','47','46','48','49','51','50','45','44','43','42','8','9','10','11','7','6','2','4','5','1','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:24' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:24 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:24 symfony [info] {sfWebDebugLogger} Configuration 26.60 ms (8)
+Jun 22 10:55:24 symfony [info] {sfWebDebugLogger} Factories 5476.86 ms (1)
+Jun 22 10:55:24 symfony [info] {sfWebDebugLogger} Action "job/search" 1421.58 ms (1)
+Jun 22 10:55:24 symfony [info] {sfWebDebugLogger} Partial "job/_list" 103.67 ms (1)
+Jun 22 10:55:24 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:24 symfony [info] {sfWebResponse} Send content (7516 o)
+Jun 22 10:55:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:24 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:24 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:24 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:24 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:24 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:25 symfony [err] {Zend_Search_Lucene_Exception} At least 3 non-wildcard characters are required at the beginning of pattern.
+Jun 22 10:55:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 22 10:55:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:25 symfony [info] {sfWebDebugLogger} Configuration 30.20 ms (8)
+Jun 22 10:55:25 symfony [info] {sfWebDebugLogger} Factories 6105.64 ms (1)
+Jun 22 10:55:25 symfony [info] {sfWebDebugLogger} Action "job/search" 800.84 ms (1)
+Jun 22 10:55:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:25 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:25 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:25 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:25 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:25 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:26 symfony [err] {Zend_Search_Lucene_Exception} At least 3 non-wildcard characters are required at the beginning of pattern.
+Jun 22 10:55:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 22 10:55:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:26 symfony [info] {sfWebDebugLogger} Configuration 30.04 ms (8)
+Jun 22 10:55:26 symfony [info] {sfWebDebugLogger} Factories 5659.34 ms (1)
+Jun 22 10:55:26 symfony [info] {sfWebDebugLogger} Action "job/search" 834.01 ms (1)
+Jun 22 10:55:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:26 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:26 symfony [err] {Zend_Search_Lucene_Exception} At least 3 non-wildcard characters are required at the beginning of pattern.
+Jun 22 10:55:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 22 10:55:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:27 symfony [info] {sfWebDebugLogger} Configuration 28.34 ms (8)
+Jun 22 10:55:27 symfony [info] {sfWebDebugLogger} Factories 5254.47 ms (1)
+Jun 22 10:55:27 symfony [info] {sfWebDebugLogger} Action "job/search" 817.73 ms (1)
+Jun 22 10:55:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:27 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:27 symfony [err] {Zend_Search_Lucene_Exception} At least 3 non-wildcard characters are required at the beginning of pattern.
+Jun 22 10:55:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 22 10:55:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:27 symfony [info] {sfWebDebugLogger} Configuration 27.52 ms (8)
+Jun 22 10:55:27 symfony [info] {sfWebDebugLogger} Factories 5385.23 ms (1)
+Jun 22 10:55:27 symfony [info] {sfWebDebugLogger} Action "job/search" 804.48 ms (1)
+Jun 22 10:55:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:28 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:28 symfony [err] {Zend_Search_Lucene_Exception} At least 3 non-wildcard characters are required at the beginning of pattern.
+Jun 22 10:55:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 22 10:55:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:28 symfony [info] {sfWebDebugLogger} Configuration 27.72 ms (8)
+Jun 22 10:55:28 symfony [info] {sfWebDebugLogger} Factories 4972.44 ms (1)
+Jun 22 10:55:28 symfony [info] {sfWebDebugLogger} Action "job/search" 777.38 ms (1)
+Jun 22 10:55:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:28 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:29 symfony [err] {Zend_Search_Lucene_Exception} At least 3 non-wildcard characters are required at the beginning of pattern.
+Jun 22 10:55:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 22 10:55:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:29 symfony [info] {sfWebDebugLogger} Configuration 29.36 ms (8)
+Jun 22 10:55:29 symfony [info] {sfWebDebugLogger} Factories 4314.56 ms (1)
+Jun 22 10:55:29 symfony [info] {sfWebDebugLogger} Action "job/search" 584.01 ms (1)
+Jun 22 10:55:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:29 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:29 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:30 symfony [err] {Zend_Search_Lucene_Exception} At least 3 non-wildcard characters are required at the beginning of pattern.
+Jun 22 10:55:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 22 10:55:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:30 symfony [info] {sfWebDebugLogger} Configuration 27.78 ms (8)
+Jun 22 10:55:30 symfony [info] {sfWebDebugLogger} Factories 4100.02 ms (1)
+Jun 22 10:55:30 symfony [info] {sfWebDebugLogger} Action "job/search" 942.40 ms (1)
+Jun 22 10:55:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:30 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:31 symfony [err] {Zend_Search_Lucene_Exception} At least 3 non-wildcard characters are required at the beginning of pattern.
+Jun 22 10:55:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 22 10:55:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:31 symfony [info] {sfWebDebugLogger} Configuration 25.87 ms (8)
+Jun 22 10:55:31 symfony [info] {sfWebDebugLogger} Factories 576.59 ms (1)
+Jun 22 10:55:31 symfony [info] {sfWebDebugLogger} Action "job/search" 655.07 ms (1)
+Jun 22 10:55:31 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:31 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:31 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:31 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:32 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:32 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:32 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:32 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:32 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:32 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:32 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:   12.0 MB | mempeak:   12.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('86','85','84','87','88','91','90','89','96','95','94','97','98','101','100','99','93','92','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:32' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:32 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:32 symfony [info] {sfWebDebugLogger} Configuration 31.53 ms (8)
+Jun 22 10:55:32 symfony [info] {sfWebDebugLogger} Factories 73.80 ms (1)
+Jun 22 10:55:32 symfony [info] {sfWebDebugLogger} Action "job/search" 807.62 ms (1)
+Jun 22 10:55:32 symfony [info] {sfWebDebugLogger} Partial "job/_list" 81.94 ms (1)
+Jun 22 10:55:32 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:32 symfony [info] {sfWebResponse} Send content (7524 o)
+Jun 22 10:55:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:32 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:32 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:32 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:32 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:32 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:33 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:33 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:33 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:33 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:33 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:33 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:33 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:33 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:33 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:33 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:   12.0 MB | mempeak:   12.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('86','85','84','87','88','91','90','89','96','95','94','97','98','101','100','99','93','92','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:33' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:33 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:33 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:33 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:33 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:33 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:33 symfony [info] {sfWebDebugLogger} Configuration 30.27 ms (8)
+Jun 22 10:55:33 symfony [info] {sfWebDebugLogger} Factories 837.36 ms (1)
+Jun 22 10:55:33 symfony [info] {sfWebDebugLogger} Action "job/search" 1053.07 ms (1)
+Jun 22 10:55:33 symfony [info] {sfWebDebugLogger} Partial "job/_list" 77.36 ms (1)
+Jun 22 10:55:33 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:33 symfony [info] {sfWebResponse} Send content (7524 o)
+Jun 22 10:55:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:34 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:34 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:34 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:34 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:34 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:34 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:34 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:34 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:34 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:34 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:34 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:   12.0 MB | mempeak:   12.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('86','85','84','87','88','91','90','89','96','95','94','97','98','101','100','99','93','92','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:34' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:35 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:35 symfony [info] {sfWebDebugLogger} Configuration 29.28 ms (8)
+Jun 22 10:55:35 symfony [info] {sfWebDebugLogger} Factories 1126.33 ms (1)
+Jun 22 10:55:35 symfony [info] {sfWebDebugLogger} Action "job/search" 1089.75 ms (1)
+Jun 22 10:55:35 symfony [info] {sfWebDebugLogger} Partial "job/_list" 90.05 ms (1)
+Jun 22 10:55:35 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:35 symfony [info] {sfWebResponse} Send content (7524 o)
+Jun 22 10:55:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:35 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:35 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:35 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:35 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:   12.0 MB | mempeak:   12.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('86','85','84','87','88','91','90','89','96','95','94','97','98','101','100','99','93','92','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:35' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:35 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:35 symfony [info] {sfWebDebugLogger} Configuration 24.31 ms (8)
+Jun 22 10:55:35 symfony [info] {sfWebDebugLogger} Factories 2162.47 ms (1)
+Jun 22 10:55:35 symfony [info] {sfWebDebugLogger} Action "job/search" 802.71 ms (1)
+Jun 22 10:55:35 symfony [info] {sfWebDebugLogger} Partial "job/_list" 77.98 ms (1)
+Jun 22 10:55:35 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:35 symfony [info] {sfWebResponse} Send content (7524 o)
+Jun 22 10:55:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:36 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:36 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:36 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:36 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:36 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:36 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:36 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:   12.0 MB | mempeak:   12.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('86','85','84','87','88','91','90','89','96','95','94','97','98','101','100','99','93','92','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:36' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:37 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:37 symfony [info] {sfWebDebugLogger} Configuration 27.65 ms (8)
+Jun 22 10:55:37 symfony [info] {sfWebDebugLogger} Factories 2849.64 ms (1)
+Jun 22 10:55:37 symfony [info] {sfWebDebugLogger} Action "job/search" 1041.46 ms (1)
+Jun 22 10:55:37 symfony [info] {sfWebDebugLogger} Partial "job/_list" 78.97 ms (1)
+Jun 22 10:55:37 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:37 symfony [info] {sfWebResponse} Send content (7524 o)
+Jun 22 10:55:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:37 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:37 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:37 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:37 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:37 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:38 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:38 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:   12.0 MB | mempeak:   12.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('86','85','84','87','88','91','90','89','96','95','94','97','98','101','100','99','93','92','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:38' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:38 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:38 symfony [info] {sfWebDebugLogger} Configuration 27.66 ms (8)
+Jun 22 10:55:38 symfony [info] {sfWebDebugLogger} Factories 3246.18 ms (1)
+Jun 22 10:55:38 symfony [info] {sfWebDebugLogger} Action "job/search" 1076.42 ms (1)
+Jun 22 10:55:38 symfony [info] {sfWebDebugLogger} Partial "job/_list" 88.89 ms (1)
+Jun 22 10:55:38 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.01 ms (1)
+Jun 22 10:55:38 symfony [info] {sfWebResponse} Send content (7524 o)
+Jun 22 10:55:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:38 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:38 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:38 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:38 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:38 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:39 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:39 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:   12.0 MB | mempeak:   12.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('86','85','84','87','88','91','90','89','96','95','94','97','98','101','100','99','93','92','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:39' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:39 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:39 symfony [info] {sfWebDebugLogger} Configuration 27.05 ms (8)
+Jun 22 10:55:39 symfony [info] {sfWebDebugLogger} Factories 4228.47 ms (1)
+Jun 22 10:55:39 symfony [info] {sfWebDebugLogger} Action "job/search" 1055.99 ms (1)
+Jun 22 10:55:39 symfony [info] {sfWebDebugLogger} Partial "job/_list" 81.74 ms (1)
+Jun 22 10:55:39 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:39 symfony [info] {sfWebResponse} Send content (7524 o)
+Jun 22 10:55:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:39 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:39 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:40 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:40 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:   12.0 MB | mempeak:   12.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('86','85','84','87','88','91','90','89','96','95','94','97','98','101','100','99','93','92','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:40' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:40 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:40 symfony [info] {sfWebDebugLogger} Configuration 27.43 ms (8)
+Jun 22 10:55:40 symfony [info] {sfWebDebugLogger} Factories 5071.64 ms (1)
+Jun 22 10:55:40 symfony [info] {sfWebDebugLogger} Action "job/search" 1087.72 ms (1)
+Jun 22 10:55:40 symfony [info] {sfWebDebugLogger} Partial "job/_list" 93.82 ms (1)
+Jun 22 10:55:40 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:40 symfony [info] {sfWebResponse} Send content (7524 o)
+Jun 22 10:55:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:40 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:40 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:40 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:40 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:40 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:41 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:41 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:   12.0 MB | mempeak:   12.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('86','85','84','87','88','91','90','89','96','95','94','97','98','101','100','99','93','92','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:41' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:41 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:41 symfony [info] {sfWebDebugLogger} Configuration 28.76 ms (8)
+Jun 22 10:55:41 symfony [info] {sfWebDebugLogger} Factories 5356.11 ms (1)
+Jun 22 10:55:41 symfony [info] {sfWebDebugLogger} Action "job/search" 1059.13 ms (1)
+Jun 22 10:55:41 symfony [info] {sfWebDebugLogger} Partial "job/_list" 83.25 ms (1)
+Jun 22 10:55:41 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:41 symfony [info] {sfWebResponse} Send content (7524 o)
+Jun 22 10:55:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:41 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:41 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:41 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:41 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:41 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:42 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:42 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:   12.0 MB | mempeak:   12.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('86','85','84','87','88','91','90','89','96','95','94','97','98','101','100','99','93','92','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:42' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:42 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:42 symfony [info] {sfWebDebugLogger} Configuration 23.62 ms (8)
+Jun 22 10:55:42 symfony [info] {sfWebDebugLogger} Factories 5604.93 ms (1)
+Jun 22 10:55:42 symfony [info] {sfWebDebugLogger} Action "job/search" 797.87 ms (1)
+Jun 22 10:55:42 symfony [info] {sfWebDebugLogger} Partial "job/_list" 76.96 ms (1)
+Jun 22 10:55:42 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:42 symfony [info] {sfWebResponse} Send content (7524 o)
+Jun 22 10:55:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:42 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:42 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:42 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:42 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:42 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:43 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:43 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:   12.0 MB | mempeak:   12.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('86','85','84','87','88','91','90','89','96','95','94','97','98','101','100','99','93','92','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:43' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:43 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:43 symfony [info] {sfWebDebugLogger} Configuration 28.76 ms (8)
+Jun 22 10:55:43 symfony [info] {sfWebDebugLogger} Factories 5364.57 ms (1)
+Jun 22 10:55:43 symfony [info] {sfWebDebugLogger} Action "job/search" 1022.37 ms (1)
+Jun 22 10:55:43 symfony [info] {sfWebDebugLogger} Partial "job/_list" 77.16 ms (1)
+Jun 22 10:55:43 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:43 symfony [info] {sfWebResponse} Send content (7524 o)
+Jun 22 10:55:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:43 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:43 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:43 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:43 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:43 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:44 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:44 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:   12.0 MB | mempeak:   12.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('86','85','84','87','88','91','90','89','96','95','94','97','98','101','100','99','93','92','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:44' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:44 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:44 symfony [info] {sfWebDebugLogger} Configuration 26.85 ms (8)
+Jun 22 10:55:44 symfony [info] {sfWebDebugLogger} Factories 5310.51 ms (1)
+Jun 22 10:55:44 symfony [info] {sfWebDebugLogger} Action "job/search" 1125.46 ms (1)
+Jun 22 10:55:44 symfony [info] {sfWebDebugLogger} Partial "job/_list" 105.80 ms (1)
+Jun 22 10:55:44 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:44 symfony [info] {sfWebResponse} Send content (7524 o)
+Jun 22 10:55:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:44 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:44 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:44 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:44 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:44 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:45 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:45 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:   12.0 MB | mempeak:   12.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('86','85','84','87','88','91','90','89','96','95','94','97','98','101','100','99','93','92','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:45' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:45 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:45 symfony [info] {sfWebDebugLogger} Configuration 26.33 ms (8)
+Jun 22 10:55:45 symfony [info] {sfWebDebugLogger} Factories 5381.26 ms (1)
+Jun 22 10:55:45 symfony [info] {sfWebDebugLogger} Action "job/search" 1069.53 ms (1)
+Jun 22 10:55:45 symfony [info] {sfWebDebugLogger} Partial "job/_list" 80.25 ms (1)
+Jun 22 10:55:45 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:45 symfony [info] {sfWebResponse} Send content (7524 o)
+Jun 22 10:55:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:46 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:46 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:46 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:46 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:46 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:46 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 10:55:47 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:   12.0 MB | mempeak:   12.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN ('86','85','84','87','88','91','90','89','96','95','94','97','98','101','100','99','93','92','108','109','110','111','107','106','103','102','104','105','118','117','119','120','121','116','115','112','113','114','128','127','129','130','131','126','125','122','123','124','132','133','134') AND jobeet_job.EXPIRES_AT>'2020-06-22 10:55:46' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 20
+Jun 22 10:55:47 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 10:55:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 10:55:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:47 symfony [info] {sfWebDebugLogger} Configuration 25.90 ms (8)
+Jun 22 10:55:47 symfony [info] {sfWebDebugLogger} Factories 5368.36 ms (1)
+Jun 22 10:55:47 symfony [info] {sfWebDebugLogger} Action "job/search" 1063.57 ms (1)
+Jun 22 10:55:47 symfony [info] {sfWebDebugLogger} Partial "job/_list" 80.66 ms (1)
+Jun 22 10:55:47 symfony [info] {sfWebDebugLogger} View "None" for "job/search" 0.02 ms (1)
+Jun 22 10:55:47 symfony [info] {sfWebResponse} Send content (7524 o)
+Jun 22 10:55:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:47 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:47 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:47 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:47 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:47 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:47 symfony [err] {Zend_Search_Lucene_Exception} At least 3 non-wildcard characters are required at the beginning of pattern.
+Jun 22 10:55:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 22 10:55:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:47 symfony [info] {sfWebDebugLogger} Configuration 27.93 ms (8)
+Jun 22 10:55:47 symfony [info] {sfWebDebugLogger} Factories 5376.69 ms (1)
+Jun 22 10:55:47 symfony [info] {sfWebDebugLogger} Action "job/search" 684.36 ms (1)
+Jun 22 10:55:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:47 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:48 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:48 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:48 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:48 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:48 symfony [err] {Zend_Search_Lucene_Exception} At least 3 non-wildcard characters are required at the beginning of pattern.
+Jun 22 10:55:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 22 10:55:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:48 symfony [info] {sfWebDebugLogger} Configuration 24.38 ms (8)
+Jun 22 10:55:48 symfony [info] {sfWebDebugLogger} Factories 5255.44 ms (1)
+Jun 22 10:55:48 symfony [info] {sfWebDebugLogger} Action "job/search" 455.33 ms (1)
+Jun 22 10:55:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:48 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:48 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 10:55:48 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 10:55:48 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 10:55:48 symfony [info] {sfPatternRouting} Match route "job_search" (/search.:sf_format) for /search with parameters array (  'module' => 'job',  'action' => 'search',  'sf_format' => 'html',)
+Jun 22 10:55:49 symfony [err] {Zend_Search_Lucene_Exception} At least 3 non-wildcard characters are required at the beginning of pattern.
+Jun 22 10:55:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 22 10:55:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:49 symfony [info] {sfWebDebugLogger} Configuration 29.59 ms (8)
+Jun 22 10:55:49 symfony [info] {sfWebDebugLogger} Factories 4690.86 ms (1)
+Jun 22 10:55:49 symfony [info] {sfWebDebugLogger} Action "job/search" 678.58 ms (1)
+Jun 22 10:55:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:49 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:49 symfony [err] {Zend_Search_Lucene_Exception} At least 3 non-wildcard characters are required at the beginning of pattern.
+Jun 22 10:55:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 22 10:55:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:49 symfony [info] {sfWebDebugLogger} Configuration 28.47 ms (8)
+Jun 22 10:55:49 symfony [info] {sfWebDebugLogger} Factories 4243.28 ms (1)
+Jun 22 10:55:49 symfony [info] {sfWebDebugLogger} Action "job/search" 688.92 ms (1)
+Jun 22 10:55:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:49 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:50 symfony [err] {Zend_Search_Lucene_Exception} At least 3 non-wildcard characters are required at the beginning of pattern.
+Jun 22 10:55:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 22 10:55:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:50 symfony [info] {sfWebDebugLogger} Configuration 26.96 ms (8)
+Jun 22 10:55:50 symfony [info] {sfWebDebugLogger} Factories 3869.72 ms (1)
+Jun 22 10:55:50 symfony [info] {sfWebDebugLogger} Action "job/search" 827.68 ms (1)
+Jun 22 10:55:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:50 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:51 symfony [err] {Zend_Search_Lucene_Exception} At least 3 non-wildcard characters are required at the beginning of pattern.
+Jun 22 10:55:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 22 10:55:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:51 symfony [info] {sfWebDebugLogger} Configuration 31.20 ms (8)
+Jun 22 10:55:51 symfony [info] {sfWebDebugLogger} Factories 3617.31 ms (1)
+Jun 22 10:55:51 symfony [info] {sfWebDebugLogger} Action "job/search" 692.15 ms (1)
+Jun 22 10:55:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:51 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:52 symfony [err] {Zend_Search_Lucene_Exception} At least 3 non-wildcard characters are required at the beginning of pattern.
+Jun 22 10:55:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 22 10:55:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:52 symfony [info] {sfWebDebugLogger} Configuration 27.55 ms (8)
+Jun 22 10:55:52 symfony [info] {sfWebDebugLogger} Factories 3631.33 ms (1)
+Jun 22 10:55:52 symfony [info] {sfWebDebugLogger} Action "job/search" 761.11 ms (1)
+Jun 22 10:55:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 10:55:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 10:55:52 symfony [info] {jobActions} Call "jobActions->executeSearch()"
+Jun 22 10:55:52 symfony [err] {Zend_Search_Lucene_Exception} At least 3 non-wildcard characters are required at the beginning of pattern.
+Jun 22 10:55:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 22 10:55:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 10:55:52 symfony [info] {sfWebDebugLogger} Configuration 24.39 ms (8)
+Jun 22 10:55:52 symfony [info] {sfWebDebugLogger} Factories 3936.51 ms (1)
+Jun 22 10:55:52 symfony [info] {sfWebDebugLogger} Action "job/search" 465.10 ms (1)
+Jun 22 11:00:02 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jun 22 11:00:02 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jun 22 11:00:02 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jun 22 11:00:02 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Jun 22 11:00:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 22 11:00:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 22 11:00:02 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jun 22 11:00:02 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 22 11:00:02 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2020-06-22 11:00:02' AND jobeet_job.IS_ACTIVATED=1 AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jun 22 11:00:03 symfony [info] {sfPHPView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jun 22 11:00:03 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    8.5 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=25 AND jobeet_job.EXPIRES_AT>'2020-06-22 11:00:03' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Jun 22 11:00:03 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 11:00:03 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=25 AND jobeet_job.EXPIRES_AT>'2020-06-22 11:00:03' AND jobeet_job.IS_ACTIVATED=1
+Jun 22 11:00:03 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=26 AND jobeet_job.EXPIRES_AT>'2020-06-22 11:00:03' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Jun 22 11:00:03 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 11:00:03 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=26 AND jobeet_job.EXPIRES_AT>'2020-06-22 11:00:03' AND jobeet_job.IS_ACTIVATED=1
+Jun 22 11:00:03 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=27 AND jobeet_job.EXPIRES_AT>'2020-06-22 11:00:03' AND jobeet_job.IS_ACTIVATED=1 ORDER BY jobeet_job.EXPIRES_AT DESC LIMIT 10
+Jun 22 11:00:03 symfony [info] {sfPartialView} Render "F:\wamp\www\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jun 22 11:00:03 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=27 AND jobeet_job.EXPIRES_AT>'2020-06-22 11:00:03' AND jobeet_job.IS_ACTIVATED=1
+Jun 22 11:00:03 symfony [info] {sfPHPView} Decorate content with "F:\wamp\www\jobeet\apps\frontend\templates/layout.php"
+Jun 22 11:00:03 symfony [info] {sfPHPView} Render "F:\wamp\www\jobeet\apps\frontend\templates/layout.php"
+Jun 22 11:00:03 symfony [info] {main} Get slot "title"
+Jun 22 11:00:03 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID IN (82)
+Jun 22 11:00:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 22 11:00:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 22 11:00:03 symfony [info] {sfWebDebugLogger} Configuration 38.48 ms (9)
+Jun 22 11:00:03 symfony [info] {sfWebDebugLogger} Factories 96.40 ms (1)
+Jun 22 11:00:03 symfony [info] {sfWebDebugLogger} Action "job/index" 59.48 ms (1)
+Jun 22 11:00:03 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 148.18 ms (1)
+Jun 22 11:00:03 symfony [info] {sfWebDebugLogger} Partial "job/_list" 62.84 ms (3)
+Jun 22 11:00:03 symfony [info] {sfWebResponse} Send content (63899 o)

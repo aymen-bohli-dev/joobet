@@ -3,7 +3,7 @@
 
 # default rules
 category:
-  url: /category/:slug.:sf_format
+  url: /:sf_culture/category/:slug.:sf_format
   class: sfPropelRoute
   param: { module: category, action: show, sf_format: html }
   options: { model: JobeetCategory, type: object }
@@ -11,7 +11,7 @@ category:
   sf_format: (?:html|atom)
   
 job_show_user:
-  url:     /job/:company_slug/:location_slug/:id/:position_slug
+  url:     /:sf_culture/job/:company_slug/:location_slug/:id/:position_slug
   class:   sfPropelRoute
   options: { model: JobeetJob, type: object, method_for_criteria: doSelectActive }
   param:   { module: job, action: show, sf_format: html }
@@ -30,6 +30,7 @@ job:
     model:          JobeetJob
     column:         token
     object_actions: { publish: put }
+    prefix_path:    /:sf_culture/job
   requirements:
     token: \w+
 
@@ -92,9 +93,13 @@ affiliate:
     model: JobeetAffiliate
     actions: [new, create]
     object_actions: { wait: get }
+    prefix_path:    /:sf_culture/affiliate
    
 job_search:
-  url:   /search.:sf_format
+  url:   /:sf_culture/search.:sf_format
   param: { module: job, action: search, sf_format: html }
   requirements:
     sf_format: (?:html|js)
+
+
+    

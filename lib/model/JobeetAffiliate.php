@@ -19,6 +19,7 @@
 class JobeetAffiliate extends BaseJobeetAffiliate {
 
 	/**
+	test commit
 	 * Initializes internal state of JobeetAffiliate object.
 	 * @see        parent::__construct()
 	 */
